@@ -3,12 +3,12 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(247, 195, 203);
     background-size: cover;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px 50px;
+    padding: 20px 20px 20px;
   }
   
   header {
@@ -23,13 +23,12 @@ main {
     margin: 0 0 30px;
     border-radius: 5px;
   }
-
   #grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
   }
   
@@ -73,10 +72,27 @@ main {
     filter: saturate(0);
     opacity: 0.5;
   }
-   
+  .restart-button {
+    background-color: #eb5a4a;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 300px;
+    padding: 15px;
+    width: 70%;
+    margin-top: 20px;
+  }
+  .restart-button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    
+}
   @media screen and (max-width:920px) {
+
     #grid {
       grid-template-columns: repeat(5, 1fr);
   
     }
+    
   }
