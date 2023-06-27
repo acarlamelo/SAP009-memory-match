@@ -2,288 +2,47 @@
 
 ## Índice
 
-- [1. Preâmbulo](#1-preâmbulo)
+- [1. Considerações gerais](#1-Considerações-gerais)
 - [2. Resumo do projeto](#2-resumo-do-projeto)
-- [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-- [4. Considerações gerais](#4-considerações-gerais)
-- [5. Critérios de aceitação mínimos do projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
-- [6. Hacker edition](#6-hacker-edition)
-- [7. Considerações técnicas](#7-considerações-técnicas)
-- [8. Pistas, tips e leituras complementares](#8-pistas-tips-e-leituras-complementares)
-- [9. Checklist](#9-checklist)
+- [3. Definição do produto](#3-Definição-do-produto)
+- [4.  Histórias de usuário](#4-Histórias-de-usuário)
+- [5. Desenho da Interface de Usuário](#5-Desenho-da-Interface-de-Usuário)
+- [6. Checklist](#6-checklist)
+- [7. Meu Projeto](#7-meu-projeto)
 
 ---
+## 1. Considerações gerais
 
-## 1. Preâmbulo
-
-O jogo [_Memory Match_](<https://en.wikipedia.org/wiki/Concentration_(card_game)>),
-também conhecido como _Concentration_, _Match Match_, _Match Up_, _Memory_,
-entre outros, é um jogo de cartas em que todas as cartas são postas viradas
-pra baixo sobre a superficie, virando duas cartas em cada turno. O
-objetivo do jogo é encontrar pares de cartas iguais.
-
-![Concentration (card game)](https://user-images.githubusercontent.com/110297/135919005-66aefadb-c462-49e2-bf10-2374f2e47688.png)
-
-Exemplos:
-
-- [Santa Tracker de Google](https://santatracker.google.com/matching.html)
-- [Match The Memory](https://matchthememory.com/play)
+- Este foi realizado atravéz do bootcamp da Laboratoria
+- O projeto foi entregue subindo o meu código no GitHub (commit/push) e a
+  interface será publicada usando [GitHub Pages].
+- Tempo para completá-lo: realizado em 3 semanas.
 
 ## 2. Resumo do projeto
 
-Neste projeto será construído uma versão _web_ do jogo _Memory Match_, em
-que uma jogadora possa jogar sozinha no navegador.
+jogo da memória voltado aos amantes do mesmo e que queiram ver algumas figuras de linguagens de programação, aproveita ai galera e conheçam cada uma delas
 
-O objetivo principal deste projeto é aprender a desenhar e construir uma
-interface web baseada em data e interação com a usuária.
+## 3. Definição do produto
+Jogo da memória contendo 20 simbolos de linhguens de programação, onde o jogador só pode abrir 1 carta por vez e no maximo 2 cartas, fechando-as caso não sejam identicas e se forem identicas ficam inativas para o clicke contando para finalizar o jogo, após as 20 eestarem inativas para click o botão de reiniciar o jogo é ativado assim o jogadpor poderá voltar ao inicio do jogo e tentar um novo tempo se assim desejar.
 
-## 3. Objetivos de aprendizagem
 
-Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
+## 4. Histórias de usuário
 
-### HTML
+Pensei em um jogo voltado aos amantes de linguagens de programação que queiram exercitar a memoria e localizar o parzinho de cada figurinha aberta, o jogo é dinamico e o jogador não consegue abrir mais de 2 cartas por vez e tem o tempo sendo cronometrado e também com um botão para reiniciar o jogo caso prefira jogar novamente porém o botão só pode ser clicado ao finalizar o atual jogo em curso, lembrando que não adianta só recarregar a página pois toda vez que recarrega ou reinicia o jogo todos ossimbolos são embaralhados novamente. Então vamos ao game e divirtam-se!!! 
 
-- [ ] **Uso de HTML semântico**
-
-  <details><summary>Links</summary><p>
-
-  * [HTML semântico](https://curriculum.laboratoria.la/pt/topics/html/02-html5/02-semantic-html)
-  * [Semantics in HTML - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-</p></details>
-
-### CSS
-
-- [ ] **Uso de seletores de CSS**
-
-  <details><summary>Links</summary><p>
-
-  * [Intro a CSS](https://curriculum.laboratoria.la/pt/topics/css/01-css/01-intro-css)
-  * [CSS Selectors - MDN](https://developer.mozilla.org/pt_BR/docs/Web/CSS/CSS_Selectors)
-</p></details>
-
-- [ ] **Modelo de caixa (box model): borda, margem, preenchimento**
-
-  <details><summary>Links</summary><p>
-
-  * [Modelo de Caixa e Display](https://curriculum.laboratoria.la/pt/topics/css/01-css/02-boxmodel-and-display)
-  * [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-  * [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  * [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
-  * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
-</p></details>
-
-- [ ] **Uso de flexbox em CSS**
-
-  <details><summary>Links</summary><p>
-
-  * [A Complete Guide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  * [Flexbox Froggy](https://flexboxfroggy.com/#pt-br)
-  * [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
-</p></details>
-
-### Web APIs
-
-- [ ] **Uso de seletores de DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Modificando o DOM](https://curriculum.laboratoria.la/pt/topics/browser/02-dom/03-1-dom-methods-selection)
-  * [Introdução ao DOM - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-  * [Locating DOM elements using selectors - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-</p></details>
-
-- [ ] **Manipulação de eventos de DOM (listeners, propagação, delegação)**
-
-  <details><summary>Links</summary><p>
-
-  * [Introdução a eventos - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events)
-  * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
-  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/removeEventListener)
-  * [Objeto Event](https://developer.mozilla.org/pt-BR/docs/Web/API/Event)
-</p></details>
-
-- [ ] **Manipulação dinâmica de DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Introdução ao DOM](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-  * [Node.appendChild() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild)
-  * [Document.createElement() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement)
-  * [Document.createTextNode()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createTextNode)
-  * [Element.innerHTML - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML)
-  * [Node.textContent - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent)
-</p></details>
-
-### JavaScript
-
-- [ ] **Diferenciar entre tipos de dados primitivos e não primitivos**
-
-- [ ] **Arrays (arranjos)**
-
-  <details><summary>Links</summary><p>
-
-  * [Arranjos](https://curriculum.laboratoria.la/pt/topics/javascript/04-arrays)
-  * [Array - MDN](https://developer.mozilla.org//pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/)
-  * [Array.prototype.sort() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-  * [Array.prototype.forEach() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-  * [Array.prototype.map() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-  * [Array.prototype.filter() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-  * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-</p></details>
-
-- [ ] **Objetos (key, value)**
-
-  <details><summary>Links</summary><p>
-
-  * [Objetos em JavaScript](https://curriculum.laboratoria.la/pt/topics/javascript/05-objects/01-objects)
-</p></details>
-
-- [ ] **Variáveis (declaração, atribuição, escopo)**
-
-  <details><summary>Links</summary><p>
-
-  * [Valores, tipos de dados e operadores](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/01-values-variables-and-types)
-  * [Variáveis](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/02-variables)
-</p></details>
-
-- [ ] **Uso de condicionais (if-else, switch, operador ternário, lógica booleana)**
-
-  <details><summary>Links</summary><p>
-
-  * [Estruturas condicionais e repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/01-conditionals-and-loops)
-  * [Tomando decisões no seu código — condicionais - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
-</p></details>
-
-- [ ] **Uso de laços (while, for, for..of)**
-
-  <details><summary>Links</summary><p>
-
-  * [Laços (Loops)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/02-loops)
-  * [Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
-</p></details>
-
-- [ ] **Funções (params, args, return)**
-
-  <details><summary>Links</summary><p>
-
-  * [Funções (controle de fluxo)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/03-functions)
-  * [Funções clássicas](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/01-classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/02-arrow)
-  * [Funções — blocos reutilizáveis de código - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Functions)
-</p></details>
-
-- [ ] **Testes unitários (unit tests)**
-
-  <details><summary>Links</summary><p>
-
-  * [Introdução ao Jest - Documentação oficial](https://jestjs.io/docs/pt-BR/getting-started)
-</p></details>
-
-- [ ] **Módulos de ECMAScript (ES modules)**
-
-  <details><summary>Links</summary><p>
-
-  * [import - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
-  * [export - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-</p></details>
-
-- [ ] **Uso de linter (ESLINT)**
-
-- [ ] **Uso de identificadores descritivos (Nomenclatura e Semântica)**
-
-- [ ] **Diferença entre expressões (expressions) e declarações (statements)**
-
-### Controle de Versões (Git e GitHub)
-
-- [ ] **Git: Instalação e configuração**
-
-- [ ] **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
-
-- [ ] **Git: Integração de mudanças entre ramos (branch, checkout, fetch, merge, reset, rebase, tag)**
-
-- [ ] **GitHub: Criação de contas e repositórios, configuração de chave SSH**
-
-- [ ] **GitHub: Implantação com GitHub Pages**
-
-  <details><summary>Links</summary><p>
-
-  * [Site oficial do GitHub Pages](https://pages.github.com/)
-</p></details>
-
-- [ ] **GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**
-
-### Centrado no usuário
-
-- [ ] **Desenhar e desenvolver um produto ou serviço colocando as usuárias no centro**
-
-### Design de produto
-
-- [ ] **Criar protótipos para obter feedback e iterar**
-
-- [ ] **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
-
-### Pesquisa
-
-- [ ] **Planejar e executar testes de usabilidade**
-
-## 4. Considerações gerais
-
-- Este projeto deverá ser feito em duplas.
-- O projeto será entregue subindo seu código no GitHub (commit/push) e a
-  interface será publicada usando [GitHub Pages](https://pages.github.com/).
-- Tempo para completá-lo: Toma como referência 4 semanas.
-
-## 5. Critérios de aceitação mínimos do projeto
-
-Os critérios para considerar que completou este projeto são:
-
-### Definição do produto
-
-Documenta brevemente seu trabalho no arquivo `README.md` do seu repositório,
-contando como foi seu processo de desenho e como acredita que o produto resolve
-o problema (ou problemas) que seu usuário tem.
-
-### Histórias de usuário
-
-Uma vez que entenda as necessidades de seus usuários, escreva as [Histórias
-de Usuário](https://pt.wikipedia.org/wiki/Hist%C3%B3ria_de_usu%C3%A1rio) que represente
-tudo que o usuário necessite fazer/ver. As **Histórias de Usuário** devem
-ser o resultado do seu processo de investigação ou _research_ de seus usuários.
-
-Certifique-se de incluir a definição de pronto (_definition of done_) e os
-Critérios de Aceitação para cada uma.
-
-Na medida do possível, termine uma história de usuário antes de passar
-para a próxima (Cumpra com a Definição de pronto + Critérios de Aceitação).
-
-### Desenho da Interface de Usuário
+## 5. Desenho da Interface de Usuário
 
 #### Protótipo de baixa fidelidade
+![memory](https://github.com/acarlamelo/SAP009-memory-match/assets/119886217/59067707-331f-4b45-9d6f-92679561176d)
+![memory2](https://github.com/acarlamelo/SAP009-memory-match/assets/119886217/0fd483be-2d4d-44a3-9c3a-6cba3bbe0435)
 
-Durante seu trabalho deve fazer e iterar esboços (_sketches_) de sua
-solução usando papel e lápis. Te recomendamos tomar fotos de todas as
-iterações que fizer, coloque em seu repositório e as menciones em seu
-`README.md`.
 
 #### Protótipo de alta fidelidade
+![labmem](https://github.com/acarlamelo/SAP009-memory-match/assets/119886217/ba183d17-365c-4f86-93c7-27152214f865)
 
-O próximo passo é desenhar a sua Interface de Usuário (UI que vem do inglês -
-_User Interface_). Para isso aprenda a utilizar algm ferramenta de
-desenho visual. Nós te recomendamos o [Figma](https://www.figma.com/), que é
-uma ferramenta que funciona no navegador com um conta gratuita.
-Porém, a escolha é livre e você pode utilizar outros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
+![labmem1](https://github.com/acarlamelo/SAP009-memory-match/assets/119886217/d80d25ae-417b-49b3-91ef-21fa6b86b77e)
 
-O desenho deve representar a sua solução _ideal_. Digamos que é o que
-desejaria implementar se tivesse tempo ilimitado para trabalhar. Além disso,
-seu desenho deve seguir os fundamentos de _visual design_.
-
-#### Testes de usabilidade
-
-Durante o desafio deverá fazer _tests_ de usabilidade com distintos usuários, e
-com base nos resultados, deverá iterar seus desenhos. Conte quais problemas de
-usabilidade foram encontradas através dos _tests_ e como elas foram
-melhoradas na sua proposta final.
+![labmem2](https://github.com/acarlamelo/SAP009-memory-match/assets/119886217/f6e3817a-70a5-4043-ad20-3aa93d68dac3)
 
 ### Implantação de la Interface de Usuário (HTML/CSS/JS)
 
@@ -301,165 +60,6 @@ Como mínimo, sua implantação deve:
    diversos tamanhos de tela: celulares, tablets e desktops.
 6. Que a interface siga os fundamentos de _visual design_.
 
-### Testes unitários
-
-O _boilerplate_ deste projeto inclui
-[testes unitários (_unit tests_) de um componente como exemplo](./src/components/App.spec.js).
-A medida que vai agregando componentes, terá que ir agregando os testes para
-manter uma boa _cobertura_.
-
-Seus _testes unitários_ devem ter uma cobertura de 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), e _branches_
-(_ramas_) de seus componentes.
-
-## 6. Hacker edition
-
-As seções chamadas _Hacker Edition_ são **opcionais**. Se já tiver terminado
-todos os requisitos anteriores e tiver tempo, pode tentar completá-las. Dessa
-forma, você pode aprofundar e/ou exercitar mais os objetivos de aprendizagem
-deste projeto.
-
-Features/características extra sugeridas:
-
-- Ao invés de consumir os dados estáticos fornecidos neste repositório, pode
-  consumir os dados de forma dinâmica, carregando um arquivo JSON por meio de
-  `fetch`. A pasta `src/data` contém uma versão `.js` e uma `.json` de
-  de cada conjunto de dados.
-- Adicionar novos conjuntos de cartas.
-- Calcular a pontuação baseado na quantidade de turnos.
-- Adicionar timer e ter conta em pontuação.
-- 100% Coverage
-
-## 7. Considerações técnicas
-
-A lógica do projeto deve ser implementada completamente em JavaScript,
-HTML e CSS. Neste projeto NÃO é permitido usar bibliotecas ou frameworks, apenas
-[vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
-
-Para iniciar um novo jogo, sempre teremos que _embaralhar_ as cartas antes de
-printá-las na tela. Para isso, te convidamos a explorar algoritmos
-existentes para este tipo de operação (chamada _shuffle_ em inglês), como por
-exemplo o [_algoritmo de Fisher-Yates (aka Knuth)_](https://es.wikipedia.org/wiki/Algoritmo_de_Fisher-Yates).
-
-Neste projeto não se espera que _invente_ ou implemente seu próprio algoritmo
-para embaralhar as cartas. Considere as opções existentes,
-escolha uma e a adapte para seu projeto (agregando uma função `shuffle`
-que possa ser usada em sua aplicação).
-
-O _boilerplate_ contém uma estrutura de arquivos como ponto de partida, assim
-como toda a configuração de dependências:
-
-```text
-.
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── package.json
-├── README.md
-└── src
-    ├── components
-    │   ├── App.js
-    │   └── App.spec.js
-    ├── data
-    │   ├── pokemon
-    │   │   ├── pokemon.js
-    │   │   └── pokemon.json
-    │   ├── README.md
-    │   └── webdev
-    │       ├── webdev.js
-    │       └── webdev.json
-    ├── index.html
-    ├── main.js
-    └── style.css
-```
-
-### `src/index.html`
-
-Como no projeto anterior, existe um arquivo `index.html`. Como já sabe, aqui
-entra a página que vai ser exibida ao usuário. Também serve para indicar quais
-scripts serão utilizados e juntar tudo o que foi feito.
-
-### `src/main.js`
-
-Recomendamos usar `src/main.js` como ponto de entrada da sua aplicação. O
-_boilerplate_ inclui este arquivo para _conectar_ ou _montar_ o _componente_
-`App` no DOM. Desta forma poderemos fazer testes unitários de nossos
-componentes sen necessidade de que estejam conectados a um DOM global.
-
-Esta não é a única forma de dividir seu código. Pode usar mais arquivos e
-pastas, contanto que a estrutura esteja clara para suas companheiras.
-
-### `src/components/App.js`
-
-Este arquivo contém um _componente_ de exemplo que mostra como podemos
-representar um _componente_ como uma função que retorna um `HTMLElement`. Na
-hora de construir interfaces, é útil pensar nos termos de _componentes_ ou
-_vistas_ que podemos ir aninhando umas dentro das outras. Te convidamos a
-pensar quais _componentes_ ou _caixinhas_ são necessárias para construir sua aplicação
-e que vá adicionando _componentes_ no directorio `components` para implementar
-cada um deles. Embora, novamente, no final, a forma de organizar seu arquivos depende
-de você e da sua equipe. Há muitas formas de faze-lo, e o _boilerplate_
-é apenas uma sugestão 🙊.
-
-### `src/components/App.spec.js`
-
-Este arquivo mostra como podemos criar arquivos com _especificações_
-(expressadas como testes unitários) de nossos componentes.
-
-### `src/data`
-
-Nesta pasta há dados com conjuntos de cartas como exemplo que pode usar na sua
-aplicação, assim como informação sobre como adicionar seus próprios conjuntos.
-Encontrará uma pasta por cada set, e dentro de cada pasta dois arquivos: um
-com la extensão `.js` e outro `.json`. Ambos arquivos contém o mesmos dados;
-a diferença é que o `.js` usaremos através de um `import`, enquanto que
-o `.json` está aqui para opcionalmente carregar os dados de forma assíncrona com
-[`fetch()`](https://developer.mozilla.org/pt/docs/Web/API/Fetch_API).
-
-## 8. Pistas, tips e leituras complementares
-
-### Primeiros passos
-
-Antes de começar a escrever código, deve definir o que seu produto faz
-com base no conhecimento que conseguir obter de seu usuário. Estas perguntas
-podem te ajudar:
-
-- Quem são os principais usuários do produto?
-- Quais são os objetivos destes usuários em relação com o produto?
-- Quais são os principais componentes da interface e por que?
-- Quando utilizam ou utilizariam o produto?
-- Toda seu investigação prévia deve ter como resultado todas as Histórias
-  de Usuário de seu projeto.
-- Não faça os protótipos de alta fidelidade de todas suas Histórias. Comece
-  apenas pelos que necessitem para sua Sprint 1 (semana 1 de trabalho). Há mais
-  dicas na guia de organização desse projeto.
-
-Quando estiver pronta para codar, te sugerimos começar desta maneira:
-
-1. Uma das integrantes da equipe deve realizar um
-[fork](https://help.github.com/articles/fork-a-repo/) do repositório de sua
-   turma (a equipe de formação fornecerá o link). A outra integrante da dupla
-   deve fazer um fork **a partir do repositório de sua companheira** e
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um `remote`
-   a partir dele.
-2. [Clona](https://help.github.com/articles/cloning-a-repository/)
-   seu _fork_ a seu computadora (copia local).
-3. Instale as dependências do projeto com o comando `npm install`, assumindo que
-   já tenha instalado o [Node.js](https://nodejs.org/) (que inclui
-   [npm](https://docs.npmjs.com/)).
-4. Se tudo correr bem, deve ser capaz de executar os :traffic_light: testes
-   unitários (unit tests) com o comando `npm test`.
-5. Para ver a interface de seu programa no navegador, utilize o comando `npm start`
-   para subir o servidor web no endereço `http://localhost:5000`.
-6. Comece a codar! :rocket:
-
-### Conteúdo de referência
-
-#### UX Design (Experiência do usuário)
-
-- Investigação com usuários / entrevistas
-- Princípios de design/UI
 
 #### Desenvolvimento Front-End
 
@@ -490,30 +90,27 @@ Quando estiver pronta para codar, te sugerimos começar desta maneira:
 - [Node.js](https://nodejs.org/)
 - [Jest](https://jestjs.io/)
 
-#### Organização do Trabalho
+## 6. Checklist
 
-- [Histórias de Usuário](https://www.youtube.com/watch?v=sEtiCJfXTE8)
-- [Definição de pronto](https://www.youtube.com/watch?v=Kfss63Q42F8)
-- [Critérios de aceitação](https://medium.com/@karladiasn/user-stories-e-crit%C3%A9rios-de-aceita%C3%A7%C3%A3o-317c48403fcd)
-- [Guia](https://docs.google.com/presentation/d/1bOq8ns5wsvXdksdqYL3aQoxzFQsXTVlyvlV-yxI2oBM/present?token=AC4w5VhHBbEEA9u2w8bm3Ey1Cse349frbg%3A1567540902700&includes_info_params=1&eisi=CM_ytPW4teQCFQrJgQodeTcEZg#slide=id.g5282e1a53f_1_106)
-
-## 9. Checklist
-
-- [ ] Usar VanillaJS.
-- [ ] Passa pelo linter (`npm run pretest`)
-- [ ] Passa pelos testes (`npm test`)
-- [ ] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e
+- [X] Usar VanillaJS.
+- [X] Passa pelo linter (`npm run pretest`)
+- [X] Passa pelos testes (`npm test`)
+- [X] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e
   branches.
-- [ ] Inclui uma _definição de produto_ clara e informativa no `README.md`.
-- [ ] Inclui histórias de usuário no `README.md`.
-- [ ] Inclui rascunho da solução (protótipo de baixa fidelidade) no `README.md`.
-- [ ] Inclui _Desenho da Interface de Usuário_ (protótipo de alta fidelidade)
+- [X] Inclui uma _definição de produto_ clara e informativa no `README.md`.
+- [X] Inclui histórias de usuário no `README.md`.
+- [X] Inclui rascunho da solução (protótipo de baixa fidelidade) no `README.md`.
+- [X] Inclui _Desenho da Interface de Usuário_ (protótipo de alta fidelidade)
       no `README.md`.
-- [ ] Inclui uma lista de problemas detectados nos testes de usabilidade no
+- [X] Inclui uma lista de problemas detectados nos testes de usabilidade no
   `README.md`.
-- [ ] UI: Mostra cartas _embaralhadas_ corretamente.
-- [ ] UI: Permite o usuário _virar_ as cartas de 2 em 2.
-- [ ] UI: Deixa os pares que foram formados virados.
-- [ ] UI: Informar o usuário que ganhou quando for relevante.
-- [ ] UI: É _responsivo_.
-- [ ] UI: A interface segue os fundamentos de _visual design_.
+- [X] UI: Mostra cartas _embaralhadas_ corretamente.
+- [X] UI: Permite o usuário _virar_ as cartas de 2 em 2.
+- [X] UI: Deixa os pares que foram formados virados.
+- [X] UI: Informar o usuário que ganhou quando for relevante.
+- [X] UI: É _responsivo_.
+- [X] UI: A interface segue os fundamentos de _visual design_.
+
+  ## 7. Meu Projeto
+
+Delicie-se com o jogo => https://acarlamelo.github.io/SAP009-memory-match/
