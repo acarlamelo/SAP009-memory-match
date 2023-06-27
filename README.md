@@ -8,13 +8,14 @@
 - [4.  Histórias de usuário](#4-Histórias-de-usuário)
 - [5. Desenho da Interface de Usuário](#5-Desenho-da-Interface-de-Usuário)
 - [6. Checklist](#6-checklist)
+- [7. Meu Projeto](#7-meu-projeto)
 
 ---
 ## 1. Considerações gerais
 
 - Este foi realizado atravéz do bootcamp da Laboratoria
 - O projeto foi entregue subindo o meu código no GitHub (commit/push) e a
-  interface será publicada usando [GitHub Pages]([https://pages.github.com/](https://acarlamelo.github.io/SAP009-memory-match/)).
+  interface será publicada usando [GitHub Pages].
 - Tempo para completá-lo: realizado em 3 semanas.
 
 ## 2. Resumo do projeto
@@ -109,3 +110,7 @@ Como mínimo, sua implantação deve:
 - [X] UI: Informar o usuário que ganhou quando for relevante.
 - [X] UI: É _responsivo_.
 - [X] UI: A interface segue os fundamentos de _visual design_.
+
+  ## 7. Meu Projeto
+
+Delicie-se com o jogo => https://acarlamelo.github.io/SAP009-memory-match/
