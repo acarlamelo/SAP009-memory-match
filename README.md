@@ -2,7 +2,7 @@
 
 ## Índice
 
-- [1. Considerações gerais](#1-Considerações gerais)
+- [1. Considerações gerais](#1-Considerações-gerais)
 - [2. Resumo do projeto](#2-resumo-do-projeto)
 - [3. Definição do produto](#3-Definição-do-produto)
 - [4.  Histórias de usuário](#4-Histórias-de-usuário)
