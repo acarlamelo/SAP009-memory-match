@@ -30,7 +30,7 @@ const finishGame = () => {
     document.querySelector('.restart-button').disabled = false; // habilita o botão de reiniciar
     document.querySelector('.restart-button').addEventListener('click', (e) => {
       e.preventDefault();
-      window.location = '../index.html';
+      window.location = './index.html';
     });
   }
 }
