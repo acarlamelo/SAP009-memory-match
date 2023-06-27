@@ -4,11 +4,10 @@
 
 - [1. Considerações gerais](#1-Considerações gerais)
 - [2. Resumo do projeto](#2-resumo-do-projeto)
-- [3. Critérios de aceitação mínimos do projeto](#3-critérios-de-aceitação-mínimos-do-projeto)
-- [4. Definição do produto](#4-Definição-do-produto)
-- [5.  Histórias de usuário](#5-Histórias-de-usuário)
-- [6. Desenho da Interface de Usuário](#6-Desenho-da-Interface-de-Usuário)
-- [7. Checklist](#7-checklist)
+- [3. Definição do produto](#3-Definição-do-produto)
+- [4.  Histórias de usuário](#4-Histórias-de-usuário)
+- [5. Desenho da Interface de Usuário](#5-Desenho-da-Interface-de-Usuário)
+- [6. Checklist](#6-checklist)
 
 ---
 ## 1. Considerações gerais
@@ -22,19 +21,15 @@
 
 jogo da memória voltado aos amantes do mesmo e que queiram ver algumas figuras de linguagens de programação, aproveita ai galera e conheçam cada uma delas
 
-## 3. Critérios de aceitação mínimos do projeto
-
-Os critérios para considerar que completou este projeto são:
-
-## 4. Definição do produto
+## 3. Definição do produto
 Jogo da memória contendo 20 simbolos de linhguens de programação, onde o jogador só pode abrir 1 carta por vez e no maximo 2 cartas, fechando-as caso não sejam identicas e se forem identicas ficam inativas para o clicke contando para finalizar o jogo, após as 20 eestarem inativas para click o botão de reiniciar o jogo é ativado assim o jogadpor poderá voltar ao inicio do jogo e tentar um novo tempo se assim desejar.
 
 
-## 5. Histórias de usuário
+## 4. Histórias de usuário
 
 Pensei em um jogo voltado aos amantes de linguagens de programação que queiram exercitar a memoria e localizar o parzinho de cada figurinha aberta, o jogo é dinamico e o jogador não consegue abrir mais de 2 cartas por vez e tem o tempo sendo cronometrado e também com um botão para reiniciar o jogo caso prefira jogar novamente porém o botão só pode ser clicado ao finalizar o atual jogo em curso, lembrando que não adianta só recarregar a página pois toda vez que recarrega ou reinicia o jogo todos ossimbolos são embaralhados novamente. Então vamos ao game e divirtam-se!!! 
 
-## 6. Desenho da Interface de Usuário
+## 5. Desenho da Interface de Usuário
 
 #### Protótipo de baixa fidelidade
 ![memory](https://github.com/acarlamelo/SAP009-memory-match/assets/119886217/59067707-331f-4b45-9d6f-92679561176d)
@@ -94,7 +89,7 @@ Como mínimo, sua implantação deve:
 - [Node.js](https://nodejs.org/)
 - [Jest](https://jestjs.io/)
 
-## 7. Checklist
+## 6. Checklist
 
 - [X] Usar VanillaJS.
 - [X] Passa pelo linter (`npm run pretest`)
