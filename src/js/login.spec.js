@@ -1,4 +1,4 @@
-import { validateInput, handleSubmit } from '../js/login.js';
+import { validateInput, handleSubmit } from 'login.js';
 
 describe('validateInput', () => {
   let button;

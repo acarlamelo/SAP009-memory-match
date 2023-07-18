@@ -1,5 +1,5 @@
 const { characters, createElement, revealCard, createCard, loadGame, startTimer, checkCards, loop,
-    finishGame } = require('../js/game.js');
+    finishGame } = require('game.js');
 
 // Teste da função characters
 describe('characters', () => {

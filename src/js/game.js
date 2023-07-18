@@ -23,8 +23,8 @@ let secondCard = '';
 
 const finishGame = () => {
   const disabledCards = document.querySelectorAll('.disabled-card');
-  
-  if (disabledCards.length === 20) {   
+
+  if (disabledCards.length === 20) {
     clearInterval(loop);
     alert(`Parabéns, ${spanPlayer.innerHTML} seu tempo foi: ${timer.innerHTML}s`);
     document.querySelector('.restart-button').disabled = false; // habilita o botão de reiniciar
@@ -49,7 +49,7 @@ const checkCards = () => {
     secondCard = '';
 
     finishGame();
-    
+
   } else {
 
     setTimeout(() => {
